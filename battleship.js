@@ -187,7 +187,8 @@ game.prototype.moveShips = function(){
         
         // 50% chance that ship will move
         var willmove = Math.floor(Math.random() * 2);
-        if(/*willmove === 1 && */ship.isMoving === true){
+        
+        if(willmove === 1 && ship.isMoving === true){
             
             // Checks if square in front of ship is free
             var forward = game.squareCheck(ship, "forward");
